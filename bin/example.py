@@ -1,5 +1,6 @@
 import set_python_path
 import random
+from os.path import join as opj
 
 from simmanager import Paths
 from utils.hydrashim import hydra
@@ -27,7 +28,7 @@ def main(cfg: DictConfig, output_paths: Paths):
     rolls = simulate_dice_rolls(cfg.n_rolls, cfg.n_sides, cfg.seed)
     
     main_logger.debug("Saving simulation data")
-    with open(output_paths.simulation_path / "dice_rolls.txt", "w") as f:
+    with open(opj(output_paths.simulation_path, "dice_rolls.txt"), "w") as f:
         f.write("\n".join(map(str, rolls)))
     
     main_logger.debug("Calculating average roll")
