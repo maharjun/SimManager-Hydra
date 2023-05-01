@@ -1,0 +1,9 @@
+loggers:
+  main_logger:
+    name: example.main_function
+    level: DEBUG
+    to_stdout: True
+  dice_rolls_logger:
+    name: example.dice_rolls_function
+    level: INFO
+    to_stdout: False

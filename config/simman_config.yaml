@@ -1,0 +1,23 @@
+# Essential for simmanager to work. Silence all extraneous features of hydra
+defaults:
+  - override hydra/job_logging: none
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+
+sim_name: DiceRollSimulation
+desc: "???"
+index: "???"
+extra_stuff: null  # example add date time with ${now:%Y-%m-%d},${now:%H-%M-%S}
+output_dir_name: "${join:
+                      ',',
+                      desc-${.desc},
+                      seed-${.seed},
+                      index-${.index},
+                      ${.extra_stuff}}"
+sim_man:
+  write_protect_dirs: True
+  tee_stdx_to: null
+  open_desc_for_edit: False

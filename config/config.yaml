@@ -1,0 +1,8 @@
+defaults:
+  - /simman_config
+  - /loggers
+
+# Simulation parameters
+n_rolls: 1000
+n_sides: 6
+seed: 102
