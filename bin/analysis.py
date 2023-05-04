@@ -9,7 +9,7 @@ from simmanager import Paths
 
 def analysis_main(output_paths: Paths) -> None:
     # Load dice roll data
-    with open(os.path.join(output_paths.data_path, "dice_rolls.json"), "r") as f:
+    with open(os.path.join(output_paths.simulation_path, "dice_rolls.json"), "r") as f:
         dice_rolls = json.load(f)
 
     # Calculate histogram
