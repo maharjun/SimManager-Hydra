@@ -1,7 +1,7 @@
 
 
-Dice Roll Simulation Tutorial
-=============================
+SimManager with Hydra (Dice Roll Simulation Tutorial)
+=====================================================
 
 In this tutorial, we'll demonstrate how to use the SimManager package to manage your simulation results and logs, along with Hydra for flexible configuration management.
 
